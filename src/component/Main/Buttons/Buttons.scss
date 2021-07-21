@@ -1,0 +1,118 @@
+button {
+    display: block;
+    width: 40px;
+    height: 40px;
+    float: left;
+    border: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: #FFF;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+
+    position: relative;
+}
+.CheckAll {
+    margin: 15px 0;
+    opacity: 0.3;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 4px;
+        height: 16px;
+        background-color: #777;
+        top: 50%;
+        left: 62.5%;
+        -webkit-transform: translate(-50%, -50%) rotateZ(50deg);
+        transform: translate(-50%, -50%) rotateZ(50deg);
+        border-radius: 2px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 4px;
+        height: 16px;
+        background-color: #777;
+        top: 50%;
+        left: 37.5%;
+        -webkit-transform: translate(-50%, -50%) rotateZ(-50deg);
+        transform: translate(-50%, -50%) rotateZ(-50deg);
+        border-radius: 2px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    &.Checked {
+        opacity: 1;
+    }
+}
+.CheckBox {
+    border-radius: 100%;
+    border: 1px solid #ddd;
+    &.Checked {
+        position: relative;
+        border: 1px solid #08bb68;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 12px;
+            height: 25px;
+            border-right: 3px solid #08bb68;
+            border-bottom: 3px solid #08bb68;
+            top: 40%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%) rotateZ(40deg);
+            transform: translate(-50%, -50%) rotateZ(40deg);
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    }
+}
+.DeleteBtn {
+    float: right;
+    opacity: 0.1;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 3px;
+        height: 25px;
+        background-color: red;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%) rotateZ(40deg);
+        transform: translate(-50%, -50%) rotateZ(40deg);
+        border-radius: 2px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 3px;
+        height: 25px;
+        background-color: red;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%) rotateZ(-40deg);
+        transform: translate(-50%, -50%) rotateZ(-40deg);
+        border-radius: 2px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    &:hover {
+        opacity: 1;
+    }
+}

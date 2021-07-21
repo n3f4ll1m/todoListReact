@@ -1,0 +1,24 @@
+.BottomMenu {
+    display: flex;
+    align-items: center;
+    .ItemCount {
+        justify-self: start;
+        font-size: 18px;
+        width: 210px;
+        color: #777;
+        padding: 2px;
+    }
+    button {
+        justify-self: center;
+        padding: 0 5px;
+        margin: 0 5px;
+        width: auto;
+        font-size: 18px;
+        border: 2px solid #FFF;
+        border-radius: 5px;
+        &.Checked {
+            border: 2px solid rgb(255, 94, 94);
+        }
+    }
+
+}

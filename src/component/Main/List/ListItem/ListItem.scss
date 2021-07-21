@@ -1,0 +1,19 @@
+.ListItem {
+    display: flex;
+    margin: 10px 0;
+    padding: 10px 0;
+    position: relative;
+    align-items: center;
+}
+.TextBox {
+    transition: all 0.2s;
+    padding-left: 25px;
+    padding-right: 5px;
+    position: relative;
+    width: 608px;
+    user-select: none;
+    &.Checked {
+        text-decoration: line-through;
+        color: #ddd
+    }
+}
